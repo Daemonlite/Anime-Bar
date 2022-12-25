@@ -420,4 +420,12 @@ nav .start-contact, a:nth-child(5):hover~.animation{
 form{
   width: fit-content;
 }
+.heap{
+  text-align: center;
+  margin-left: 15px;
+}
+ul{
+  display: grid;
+  place-content: center;
+}
 }
