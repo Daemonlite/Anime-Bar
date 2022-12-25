@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" href="/jujutsu/images/jujulogo.png">
+    <title>AnimeBar (Beta)</title>
+</head>
+<body class="body">
+<div>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#category">Category</a>
+        <a href="/rating.html">Rating</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="animation start-home"></div>
+    </nav>
+</div>
+
+<div class="home-intro">
+    <h1 class="header">Welcome to AnimeBar</h1>
+<p class="par">view and download HQ anime wallpapers and view some scenes</p>
+</div>
+
+
+<div class="slideshow-container" id="home">
+
+   
+    <div class="mySlides fade">
+      <img src="https://i.pinimg.com/236x/07/bb/56/07bb56145a5d7866694a21fcee3cb780.jpg" class="carosel" >
+    
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="https://i.pinimg.com/236x/f3/b9/66/f3b9662e7d810a0bc0881007d371f90c.jpg" class="carosel">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="https://i.pinimg.com/236x/2e/45/9f/2e459fea64b22165f8129d734456fc7e.jpg" class="carosel">
+      
+    </div>
+    <div class="mySlides fade">
+        <img src="https://i.pinimg.com/736x/00/66/79/0066794f4ca451948846011989270802.jpg" class="carosel" >
+        
+      </div>
+      <div class="mySlides fade">
+        <img src="https://i.pinimg.com/236x/20/6c/f6/206cf69a0a580e0c09e067a0eca8be69.jpg" class="carosel">
+        
+      </div>
+
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+<br>
+<br>
+
+
+  <h3 class="header " id="category" name="category">Various collection</h3>
+  <ul>
+    <li><a href="/blackclover.html">Black clover</a></li>
+    <li><a href="/jujutsu/jujutsu.html">jujutsu kaisen</a></li>
+   
+    <li><a href="/Naruto/naruto.html">Naruto</a></li>
+    <li><a href="/onepiece/piece.html">One Piece</a></li>
+    <li><a href="/hunter/hunter.html">Hunter</a></li>
+    <li><a href="/demon slayer/slayer.html">Demon Slayer</a></li>
+    <li><a href="/DragonBall/dragonball.html">Dragon Ball</a> </li>
+
+  </ul>
+<h3 class="header">soon to come</h3>
+  <ul>
+    <li>Spy x family</li>
+    <li>Boruto</li>
+    <li>Death Note</li>
+    <li> Baccano</li>
+    <li>Fairy Tail</li>
+    <li>Mob Psycho</li>
+    <li>Cowboy Bebop </li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+
+<div class="header" id="contact">
+  <h3>Contact us or Suggest Anime</h3>
+</div>
+<div class="contain">
+  <form action="https://getform.io/f/55882467-7423-4b13-abc1-6b7d5a1fb045" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">Ghana</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br>
+<br>
+
+<div class="about" id="about">
+  <h2 class="header">About us</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Qui saepe fuga sapiente ab perferendis repellat ipsum eaque 
+     accusantium maiores reiciendis ex, 
+    libero rerum consequuntur. Maxime minima quis atque molestiae blanditiis.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ut. Minus 
+  maiores repudiandae laborum non adipisci, amet sunt tempora excepturi
+   suscipit alias qui provident voluptate reprehenderit enim cum eius veritatis.
+  </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
